@@ -70,6 +70,7 @@ function installNghdl
     # Do not trap on error of any command. Let NGHDL script handle its own errors.
     trap "" ERR
 
+    sed -i "s/libcanberra-gtk-module //" install-nghdl-scripts/install-nghdl-24.04.sh
     bash install-nghdl-scripts/install-nghdl-24.04.sh --install       # Install NGHDL
         
     # Set trap again to error_exit function to exit on errors
