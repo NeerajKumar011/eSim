@@ -71,6 +71,12 @@ function installNghdl
     trap "" ERR
 
     sed -i "s/libcanberra-gtk-module //" install-nghdl-scripts/install-nghdl-24.04.sh
+
+    sed -i '/chmod +x configure/a\
+    sed -i '\''s/check_version 18.1 $llvm_version ||/&\
+       check_version 20.0 $llvm_version ||\
+       check_version 20.1 $llvm_version ||/'\'' configure' install-nghdl-scripts/install-nghdl-24.04.sh
+
     bash install-nghdl-scripts/install-nghdl-24.04.sh --install       # Install NGHDL
         
     # Set trap again to error_exit function to exit on errors
