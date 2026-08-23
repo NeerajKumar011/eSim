@@ -726,9 +726,12 @@ The integrated components were also verified:
 
 The final installation was validated both at the command line and through the eSim graphical interface.
 
-## Documentation
+## Detailed Report
 
-A detailed report containing the complete error-by-error investigation, correction steps, verification results, and screenshots is provided separately for the Task 4 submission.
+The complete installation and debugging report, including error analysis,
+corrections, verification steps, and screenshots, is available here:
+
+[Task 4 Installation Report](./eSim_Task4_Final_Report.pdf)
 
 ## Repository Link
 
